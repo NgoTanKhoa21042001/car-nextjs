@@ -1,4 +1,5 @@
 "use client";
+import Image from "@/node_modules/next/image";
 import { CustomButtonProps } from "@/types/index";
 
 const CustomButton = ({
@@ -15,6 +16,16 @@ const CustomButton = ({
       onClick={handleClick}
     >
       <span className={`flex-1 ${textStyles}`}>{title}</span>
+      {rightIcon && (
+        <div className="relative w-6 h-6">
+          <Image
+            src={rightIcon}
+            alt="arrow_left"
+            fill
+            className="object-contain"
+          />
+        </div>
+      )}
     </button>
   );
 };
