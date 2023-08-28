@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import SearchManufacturer from "./SearchManufacturer";
 
 const SearchBar = () => {
-  const [manufacturer, setManufacturer] = useState("");
+  const [manufacturer, setManuFacturer] = useState("");
   const handleSearch = () => {};
   return (
     <div className="searchbar" onSubmit={handleSearch}>
       <div className="searchbar__item">
         <SearchManufacturer
           manufacturer={manufacturer}
-          setManufacturer={setManufacturer}
+          setManuFacturer={setManuFacturer}
         />
       </div>
     </div>
