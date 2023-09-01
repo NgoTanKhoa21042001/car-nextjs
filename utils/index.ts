@@ -1,3 +1,5 @@
+import { CarProps } from "@/types/index";
+
 // thiết lập giá thuê cho xe dựa trên hệ số quảng đường
 export const calculateCarRent = (city_mpg: number, year: number) => {
   const basePricePerDay = 50; // Base rental price per day in dollars
@@ -42,3 +44,7 @@ export async function fetchCars() {
   const result = await response.json();
   return result;
 }
+
+export const generateImageUrl = (car: CarProps, angle?: string) => {
+  
+};
